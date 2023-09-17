@@ -35,7 +35,7 @@
       authorized_key:
         user: cloudru
         state: present
-        key: "{{ lookup('file', playbook_dir + '/cloud.pub') }}"
+        key: "{{ lookup('file', playbook_dir + '/cloudru_key.pub') }}"
 
   handlers:
     - name: Restart sshd
